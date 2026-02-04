@@ -1,20 +1,21 @@
-BRG001, Aqua, 3.000
-BRG002, Le Minerale, 3.000
-BRG003, Nestle Pure Life, 3.500
-BRG004, Vit, 3.500
-BRG005, Cleo, 3.000
-BRG006, Crystalline, 4.000
-BRG007, Pristine, 5.000
-BRG008, Ades, 4.500
-BRG009, Club, 2.500
-BRG010, Equil, 10.000
-BRG011, Indomie Kari Ayam, 3.000
-BRG012, Indomie Goreng, 3.500
-BRG013, Indomie Aceh, 3.500
-BRG014, Indomie Rendang, 3.500
-BRG015, Indomie Soto Banjar, 3.000
-BRG016, Indomie Cabe Ijo, 3.500
-BRG017, Indomie Soto Spesial, 3.000
-BRG018, Indomie Ayam Geprek, 3.500
-BRG019, Indomie Soto Medan, 3.000
-BRG020, Indomie Soto Lamongan, 3.000
+BRG001, Aqua,3000
+BRG002, Le Minerale,3000
+BRG003, Nestle Pure Life,3500
+BRG004, Vit,3500
+BRG005, Cleo,3000
+BRG006, Crystalline,4000
+BRG007, Pristine,5000
+BRG008, Ades,4500
+BRG009, Club,2500
+BRG010, Equil,10000
+BRG011, Indomie Kari Ayam,3000
+BRG012, Indomie Goreng,3500
+BRG013, Indomie Aceh,3500
+BRG014, Indomie Rendang,3500
+BRG015, Indomie Soto Banjar,3000
+BRG016, Indomie Cabe Ijo,3500
+BRG017, Indomie Soto Spesial,3000
+BRG018, Indomie Ayam Geprek,3500
+BRG019, Indomie Soto Medan,3000
+BRG020, Indomie Soto Lamongan,3001
+BRG021, Mie Sedaap Goreng,3500

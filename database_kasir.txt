@@ -1,0 +1,3 @@
+rezki,qwerty
+nayla,123456
+najla,abcdef
