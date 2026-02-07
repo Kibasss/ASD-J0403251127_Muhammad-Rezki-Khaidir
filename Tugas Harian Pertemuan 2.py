@@ -1,3 +1,7 @@
+import os
+import getpass
+import stdiomask
+
 nama_file = 'stock_barang.txt'
 
 def load_data_barang(nama_file):
@@ -12,7 +16,6 @@ def load_data_barang(nama_file):
                 'harga': int(harga)
             }
     return data_barang
-
 buka_data = load_data_barang(nama_file)
 
 def tampil_data_barang(data_barang):
@@ -25,8 +28,6 @@ def tampil_data_barang(data_barang):
         harga = data_barang[kode]['harga']
         print(f"{kode:7} {nama:<25} {harga:>8}")
 
-# tampil_data_barang(buka_data)
-
 def cari_data_barang(data_barang):
     kode_input = input("Masukkan Kode Barang yang ingin dicari: ").upper().strip()
     if kode_input in data_barang:
@@ -38,8 +39,6 @@ def cari_data_barang(data_barang):
         print(f"Harga : {harga}")
     else:
         print("\nData Tidak Ditemukan.")
-
-# cari_data_barang(buka_data)
 
 def update_stok_barang(data_barang):
     kode_input = input("Masukkan Kode Barang yang ingin diupdate stoknya: ").upper().strip()
@@ -62,8 +61,6 @@ def update_stok_barang(data_barang):
     else:
         print("\nData Tidak Ditemukan.")
 
-# update_stok_barang(buka_data)
-
 def simpan_data_barang(nama_file, data_barang):
     with open(nama_file, 'w', encoding='utf-8') as file:
         for kode in data_barang:
@@ -71,8 +68,6 @@ def simpan_data_barang(nama_file, data_barang):
             harga = data_barang[kode]['harga']
             file.write(f"{kode},{nama},{harga}\n")
     print("\nData berhasil disimpan ke file.")
-
-# simpan_data_barang(nama_file, buka_data)
 
 def tambah_data_barang(data_barang):
     kode_baru = input("Masukkan Kode Barang Baru: ").upper().strip()
@@ -92,13 +87,10 @@ def tambah_data_barang(data_barang):
     }
     print("\nData Barang Baru Berhasil Ditambahkan.")
 
-# tambah_data_barang(buka_data)
-# simpan_data_barang(nama_file, buka_data)
-
 def login():
     print("\n=== Login ===")
     username_input = input("Masukkan Username: ")
-    password_input = input("Masukkan Password: ")
+    password_input = stdiomask.getpass("Masukkan Password: ", mask='*')
 
     nama_data = 'database_kasir.txt'
 
