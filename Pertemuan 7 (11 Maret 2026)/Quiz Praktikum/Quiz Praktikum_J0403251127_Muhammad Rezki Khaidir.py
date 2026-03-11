@@ -7,12 +7,16 @@
 
 # 1. FILE HANDLING & DICTIONARY (Sub-CPMK 1) [cite: 31]
 def muat_data_buku(nama_file):
-    """
-    Fungsi untuk membaca 'buku.txt' dan menyimpannya ke Dictionary.
-    Format file: kode_buku,judul,harga
-    """
-    database_buku = {}
-    # TODO: Implementasikan kode pembacaan file di sini
+    database_buku = {nama_file: {}}
+    with open(nama_file, "r", encoding="utf-8") as file:
+        for baris in file:
+            baris = baris.strip()
+            kode_buku, judul, Harga = baris.split(",")
+            database_buku[kode_buku] = {
+                "kode_buku": kode_buku,
+                "judul": judul,
+                "harga": int(Harga)
+            }
     return database_buku
 
 # 2. LINKED LIST - MANAJEMEN PROMOSI (Sub-CPMK 2) [cite: 32]

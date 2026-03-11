@@ -1,0 +1,10 @@
+BukuIlmiah001,Biologi,10000
+BukuIlmiah002,Kimia,12000
+BukuIlmiah003,Matematika,11000
+BukuIlmiah004,Fisika,15000
+BukuIlmiah005,Anatomi Manusia,16000
+BukuFiksi001,Si Kancil,5000
+BukuFiksi002,Singa Si Raja Hutan,7000
+BukuFiksi003,Malin Kundang,10000
+BukuFiksi004,Si Anak Kuat,20000
+BukuFiksi005,Si Anak Hebat,18000
