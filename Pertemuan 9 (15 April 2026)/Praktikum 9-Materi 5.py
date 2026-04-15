@@ -34,3 +34,11 @@ root.left.right = Node("E")
 # Menampilkan hasil Traversal Postorder
 print("Hasil Traversal Postorder : ")
 postorder(root) # Output: D E B C A
+
+# Pembahasan:
+'''
+Pada kode di atas, kita membuat sebuah class Node yang memiliki atribut data, left, dan right.
+Atribut data digunakan untuk menyimpan nilai pada node, sedangkan left dan right digunakan untuk menyimpan referensi ke child kiri dan kanan dari node tersebut.
+Pada contoh penggunaan, kita membuat sebuah node root dengan data "A" dan menambahkan child kiri "B" dan child kanan "C".
+Selanjutnya, kita menambahkan child kiri "D" dan child kanan "E" pada node "B". Terakhir, kita menampilkan hasil dari traversal postorder yang mengunjungi child kiri terlebih dahulu, kemudian child kanan, dan terakhir node root.
+'''

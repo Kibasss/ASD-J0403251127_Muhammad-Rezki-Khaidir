@@ -5,7 +5,7 @@
 # Latihan 1: Membuat Node
 # ===================================================================
 
-# Class node digunakan untuk dasar dari tree
+# Class Node digunakan untuk dasar dari tree
 
 class Node:
     def __init__(self, data):
@@ -21,6 +21,9 @@ print("Data Root:", root.data) # Output: A
 print("Data Child Kiri Root:", root.left) # Output: None
 print("Data Child Kanan Root:", root.right) # Output: None
 
-
-# Pembahasan :
-# Pada kode di atas, kita membuat sebuah class Node yang memiliki atribut data, left, dan right. Atribut data digunakan untuk menyimpan nilai pada node, sedangkan left dan right digunakan untuk menyimpan referensi ke child kiri dan kanan dari node tersebut. Pada contoh penggunaan, kita membuat sebuah node root dengan data "A" dan menampilkan isi dari node tersebut.
+# Pembahasan:
+'''
+Pada kode di atas, kita membuat sebuah class Node yang memiliki atribut data, left, dan right. 
+Atribut data digunakan untuk menyimpan nilai pada node, sedangkan left dan right digunakan untuk menyimpan referensi ke child kiri dan kanan dari node tersebut. 
+Pada contoh penggunaan, kita membuat sebuah node root dengan data "A" dan menampilkan isi dari node tersebut.
+'''
