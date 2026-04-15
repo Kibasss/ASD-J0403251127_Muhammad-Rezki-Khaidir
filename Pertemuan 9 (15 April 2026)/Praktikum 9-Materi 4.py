@@ -18,3 +18,15 @@ def inorder(node):
         inorder(node.left) # Kunjungi child kiri
         inorder(node.data, end=" ") # Kunjungi node saat ini
         inorder(node.right) # Kunjungi child kanan
+
+# Membuat Tree
+# Membuat Node Root
+root = Node("A")
+
+# Membuat Child level 1
+root.left = Node("B")
+root.right = Node("C")
+
+# Membuat Child level 2
+root.left.left = Node("D")
+root.left.right = Node("E")
