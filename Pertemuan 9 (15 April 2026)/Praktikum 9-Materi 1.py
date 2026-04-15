@@ -5,7 +5,7 @@
 # Latihan 1: Membuat Node
 # ===================================================================
 
-# class node digunakan untuk dasar dari tree
+# Class node digunakan untuk dasar dari tree
 
 class Node:
     def __init__(self, data):

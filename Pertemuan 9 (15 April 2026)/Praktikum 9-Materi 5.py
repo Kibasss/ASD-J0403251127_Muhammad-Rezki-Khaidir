@@ -1,9 +1,9 @@
-# ===================================================================
+# ==========================================================
 # Nama: Muhammad Rezki Khaidir
 # NIM: J0403251127
 # Kelas: TPL PB/1
-# Latihan 3: Membuat Traversal Preorder
-# ===================================================================
+# Latihan 5: Membuat Traversal Postorder
+# ==========================================================
 
 # Class Node digunakan untuk dasar dari Tree
 
@@ -13,12 +13,12 @@ class Node:
         self.left = None # Child kiri, awalnya None
         self.right = None # Child kanan, awalnya None
 
-# Fungsi Preorder : Root -> Left -> Right
-def preorder(node):
+# Fungsi Postorder : Left -> Right -> Root
+def postorder(node):
     if node is not None:
+        postorder(node.left) # Traversal ke child kiri
+        postorder(node.right) # Traversal ke child kanan
         print(node.data, end=" ") # Menampilkan data pada node
-        preorder(node.left) # Traversal ke child kiri
-        preorder(node.right) # Traversal ke child kanan
 
 # Membuat Node Root
 root = Node("A") # Membuat node root dengan data "A"
@@ -31,6 +31,6 @@ root.right = Node("C")
 root.left.left = Node("D")
 root.left.right = Node("E")
 
-# Menampilkan hasil Traversal Preorder
-print("Hasil Traversal Preorder : ")
-preorder(root) # Output: A B D E C
+# Menampilkan hasil Traversal Postorder
+print("Hasil Traversal Postorder : ")
+postorder(root) # Output: D E B C A

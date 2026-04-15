@@ -5,7 +5,6 @@
 # Latihan 2:
 # ===================================================================
 
-
 # Class Node digunakan untuk dasar dari Tree
 
 class Node:

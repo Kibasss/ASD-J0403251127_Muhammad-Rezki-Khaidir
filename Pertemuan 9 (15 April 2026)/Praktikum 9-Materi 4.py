@@ -6,6 +6,7 @@
 # ===================================================================
 
 # Class Node digunakan untuk dasar dari Tree
+
 class Node:
     def __init__(self, data):
         self.data = data
@@ -30,3 +31,7 @@ root.right = Node("C")
 # Membuat Child level 2
 root.left.left = Node("D")
 root.left.right = Node("E")
+
+# Menampilkan hasil Traversal Inorder
+print("Hasil Traversal Inorder : ")
+inorder(root) # Output: D B E A C
