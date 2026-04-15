@@ -38,9 +38,7 @@ preorder(root)
 
 # Pembahasan:
 '''
-Pada kode di atas, kita membuat sebuah class Node yang memiliki atribut data, left, dan right.
-Atribut data digunakan untuk menyimpan nilai pada node, sedangkan left dan right digunakan untuk menyimpan referensi ke child kiri dan kanan dari node tersebut.
-Pada contoh penggunaan, kita membuat sebuah node root dengan data "Direktur" dan menambahkan child kiri "Manajer A" dan child kanan "Manajer B".
-Selanjutnya, kita menambahkan child kiri "Staff 1" dan child kanan "Staff 2" pada node "Manajer A", serta child kiri "Staff 3" pada node "Manajer B". 
-Terakhir, kita menampilkan struktur organisasi perusahaan menggunakan traversal preorder yang mengunjungi node root terlebih dahulu, kemudian child kiri, dan terakhir child kanan.
+Pada latihan keenam ini, kode ini mengaplikasikan konsep Tree ke dalam studi kasus nyata yaitu Struktur Organisasi, di mana setiap jabatan direpresentasikan sebagai sebuah node yang memiliki hubungan atasan-bawahan. 
+Dengan menggunakan fungsi preorder, program akan membaca struktur ini berdasarkan garis komando yang dimulai dari jabatan tertinggi yaitu Direktur, lalu turun menelusuri seluruh departemen di bawah Manajer A (dari Staff 1 ke Staff 2), baru kemudian berpindah ke departemen Manajer B dan stafnya. 
+Hasil urutan cetaknya mencerminkan cara kerja organisasi yang hierarkis, di mana pimpinan utama disebut terlebih dahulu sebelum merinci satu per satu tim di bawahnya secara sistematis.
 '''

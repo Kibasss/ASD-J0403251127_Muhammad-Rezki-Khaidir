@@ -23,7 +23,6 @@ print("Data Child Kanan Root:", root.right) # Output: None
 
 # Pembahasan:
 '''
-Pada kode di atas, kita membuat sebuah class Node yang memiliki atribut data, left, dan right. 
-Atribut data digunakan untuk menyimpan nilai pada node, sedangkan left dan right digunakan untuk menyimpan referensi ke child kiri dan kanan dari node tersebut. 
-Pada contoh penggunaan, kita membuat sebuah node root dengan data "A" dan menampilkan isi dari node tersebut.
+Kode ini adalah cara mendefinisikan sebuah Node atau unit dasar dalam struktur data Tree, di mana setiap Node diibaratkan sebagai sebuah kotak yang memiliki tiga bagian utama: identitas atau nilai yang disimpan (data), serta dua "tangan" (left dan right) untuk terhubung ke kotak lain di bawahnya. 
+Karena kode ini baru membuat satu objek bernama root dengan isi "A", maka saat dijalankan, sistem hanya menampilkan data utamanya saja, sementara tangan kiri dan kanannya masih bernilai None atau kosong karena belum ada cabang atau "anak" yang kamu sambungkan ke node utama tersebut.
 '''

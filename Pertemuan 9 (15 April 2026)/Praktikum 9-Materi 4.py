@@ -38,8 +38,6 @@ inorder(root) # Output: D B E A C
 
 # Pembahasan:
 '''
-Pada kode di atas, kita membuat sebuah class Node yang memiliki atribut data, left, dan right.
-Atribut data digunakan untuk menyimpan nilai pada node, sedangkan left dan right digunakan untuk menyimpan referensi ke child kiri dan kanan dari node tersebut.
-Pada contoh penggunaan, kita membuat sebuah node root dengan data "A" dan menambahkan child kiri "B" dan child kanan "C".
-Selanjutnya, kita menambahkan child kiri "D" dan child kanan "E" pada node "B". Terakhir, kita menampilkan hasil dari traversal inorder yang mengunjungi child kiri terlebih dahulu, kemudian node saat ini, dan terakhir child kanan.
+Pada latihan keempat ini, kode ini menggunakan teknik Traversal Inorder, yaitu metode pembacaan pohon dengan urutan Kiri -> Root -> Kanan yang bertujuan untuk mengunjungi data dari sisi paling kiri terlebih dahulu sebelum naik ke induknya dan berpindah ke sisi kanan. 
+Melalui fungsi rekursif inorder(node), program akan terus menelusuri cabang kiri sampai ujung (ke node "D"), baru kemudian mencetak nilai induknya ("B"), lanjut ke anak kanan ("E"), kembali ke akar utama ("A"), dan diakhiri dengan sisi kanan paling luar ("C"), sehingga menghasilkan urutan "D B E A C" yang memberikan gambaran data dari perspektif horizontal atau mendatar.
 '''

@@ -37,8 +37,6 @@ preorder(root) # Output: A B D E C
 
 # Pembahasan:
 '''
-Pada kode di atas, kita membuat sebuah class Node yang memiliki atribut data, left, dan right. 
-Atribut data digunakan untuk menyimpan nilai pada node, sedangkan left dan right digunakan untuk menyimpan referensi ke child kiri dan kanan dari node tersebut.
-Pada contoh penggunaan, kita membuat sebuah node root dengan data "A" dan menambahkan child kiri "B" dan child kanan "C".
-Selanjutnya, kita menambahkan child kiri "D" dan child kanan "E" pada node "B". Terakhir, kita menampilkan hasil dari traversal preorder yang mengunjungi node root terlebih dahulu, kemudian child kiri, dan terakhir child kanan.
+Kode ini memperkenalkan fungsi Traversal Preorder, yaitu sebuah teknik untuk "berkunjung" dan mencatat setiap data dalam pohon dengan urutan sistematis yang dimulai dari Root (induk), lalu masuk ke cabang Left (kiri), dan terakhir ke cabang Right (kanan). 
+Melalui fungsi preorder(node), program menggunakan cara kerja rekursif di mana ia akan terus mendatangi anak sebelah kiri sedalam mungkin (dari A ke B, lalu ke D) sebelum akhirnya mundur untuk mengecek cabang kanan yang tersisa, sehingga menghasilkan urutan cetak "A B D E C" yang menggambarkan rute perjalanan menyusuri sisi kiri pohon hingga tuntas sebelum berpindah ke sisi lainnya.
 '''
