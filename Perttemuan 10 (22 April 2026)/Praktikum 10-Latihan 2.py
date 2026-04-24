@@ -38,3 +38,11 @@ def inorder(root): #Traversal Inorder
 
 print("Hasil inorder :") #Menampilkan hasil traversal
 inorder(root) #Menjalankan traversal inorder
+
+'''
+Pembahasan:
+Kode ini merupakan pengembangan dari struktur Binary Search Tree (BST) sebelumnya, dengan tambahan fungsi Inorder Traversal untuk membaca atau menampilkan 
+data yang tersimpan secara berurutan. Cara kerjanya adalah dengan mengunjungi cabang sebelah kiri terlebih dahulu, kemudian mencetak nilai induk (node),
+dan terakhir mengunjungi cabang sebelah kanan secara berulang (rekursif). Karena aturan penempatan data pada BST sudah teratur sejak awal, metode inorder ini secara otomatis
+akan menampilkan seluruh angka dalam urutan yang rapi dari yang terkecil hingga yang terbesar.
+'''

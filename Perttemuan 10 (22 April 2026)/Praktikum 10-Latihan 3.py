@@ -47,3 +47,11 @@ if search(root,key) is True:
     print("Data ditemukan")
 else:
     print("Data tidak ditemukan")
+
+'''
+Pembahasan:
+Program ini menambahkan fungsi pencarian cerdas pada struktur Binary Search Tree (BST) untuk mendeteksi apakah suatu data tertentu ada di dalam sistem atau tidak.
+Logikanya sangat efisien: sistem akan membandingkan angka yang dicari dengan posisi node saat ini; jika belum cocok, pencarian hanya akan berlanjut ke cabang kiri 
+(untuk angka yang lebih kecil) atau cabang kanan (untuk angka yang lebih besar) tanpa harus mengecek seluruh data satu per satu. Dengan metode eliminasi ini,
+proses pencarian menjadi sangat cepat karena sistem langsung mengabaikan jalur yang tidak relevan hingga data ditemukan atau dipastikan tidak ada.
+'''

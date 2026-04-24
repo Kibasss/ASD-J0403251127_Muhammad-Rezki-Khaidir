@@ -30,3 +30,11 @@ for data in data_list: #Menambahkan setiap elemen dalam data_list ke dalam Node
     root = insert(root,data)
 
 print("BST berhasil dibuat")
+
+'''
+Pembahasan:
+Kode ini mengimplementasikan struktur data Binary Search Tree (BST), yang berfungsi untuk mengorganisir sekumpulan data angka secara hierarkis agar proses pencarian 
+menjadi lebih efisien. Setiap data baru yang masuk akan dibandingkan dengan nilai induk (node); jika nilainya lebih kecil, data akan diarahkan ke cabang kiri, dan jika lebih besar,
+data akan diarahkan ke cabang kanan secara rekursif melalui fungsi insert. Dengan mengikuti aturan penempatan tersebut, kode ini secara otomatis membentuk struktur "pohon"
+yang seimbang dari daftar angka yang diberikan, memastikan seluruh data tersusun rapi sesuai urutan besarnya.
+'''

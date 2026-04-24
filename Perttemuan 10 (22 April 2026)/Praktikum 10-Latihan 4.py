@@ -50,3 +50,12 @@ print("Preorder BST:")
 preorder(root) 
 print("\n\nStruktur BST:") 
 tampil_struktur(root)
+
+'''
+Pembahasan:
+Kode ini bertujuan untuk memvisualisasikan bagaimana sebuah Binary Search Tree (BST) terbentuk dan bercabang secara nyata di dalam memori. 
+Dengan menggunakan fungsi tampil_struktur, program akan memetakan posisi setiap angka mulai dari akar utama (root) hingga ke cabang kiri (L) dan kanan (R) 
+secara hierarkis sesuai urutan input data. Selain itu, terdapat fitur Preorder Traversal yang menampilkan urutan data dengan prinsip mengunjungi induk terlebih dahulu 
+sebelum turun ke anak-anaknya, sehingga siapa pun yang melihat kode ini bisa memahami gambaran utuh apakah struktur pohon yang dihasilkan sudah seimbang
+atau justru condong ke satu sisi tertentu.
+'''
