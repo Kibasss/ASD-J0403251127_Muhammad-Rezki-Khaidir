@@ -1,10 +1,9 @@
 #=================================================
-# Nama : Muhammad Rezki Khaidir
+# Nama: Muhammad Rezki Khaidir
 # NIM: J0403251127
 # Kelas: TPL PB/1
 # Latihan 2 : Traversal Inorder
 #=================================================
-
 
 class Node:
     def __init__(self, data):  #Inisialisasi
