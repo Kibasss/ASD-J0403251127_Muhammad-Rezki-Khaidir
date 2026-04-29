@@ -5,12 +5,15 @@
 # Implementasi BFS (Dasar Graph)
 # ================================================================
 
-graph ={
-    'A': ['B', 'C'],
-    'B': ['A', 'D'],
-    'C': ['A', 'D'],
-    'D': ['B', 'C']
+# Membuat dictionary untuk menyimpan struktur graph
+# Key = Titik asal, Value = Titik tetangga yang terhubung
+graph = {
+    'A': ['B', 'C'], # Titik A terhubung ke B dan C
+    'B': ['A', 'D'], # Titik B terhubung ke A dan D
+    'C': ['A', 'D'], # Titik C terhubung ke A dan D
+    'D': ['B', 'C']  # Titik D terhubung ke B dan C
 }
 
+# Looping untuk mengambil setiap titik (node) di dalam graph
 for node in graph:
-    print(node, "->", graph[node])
+    print(node, "->", graph[node]) # Menampilkan titik asal beserta tetangganya ke layar

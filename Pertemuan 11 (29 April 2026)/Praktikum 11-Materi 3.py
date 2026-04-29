@@ -5,39 +5,31 @@
 # Implementasi DFS
 # ================================================================
 
+# Menggunakan fitur deque untuk membuat antrean (queue) yang efisien
 from collections import deque
 
-#representasi graph
-graph ={
+# Representasi graph (peta jaringan) menggunakan dictionary
+graph = {
     'A': ['B', 'C'],
     'B': ['D', 'E'],
     'C': ['F', 'G'],
-    'D':[],
-    'E':[],
-    'F':[],
-    'G':[],
-        
+    'D': [],
+    'E': [],
+    'F': [],
+    'G': [],
 }
 
+# Fungsi untuk menelusuri graph dengan metode DFS (Depth First Search)
 def dfs(graph, node, visited):
-    #Fungsi untuk melakukan penelusuran graph menggunakan DFS
-    #graph : dictionary yang mentimpan graph
-    #node: menyimpan node yang sedang dikunjungi
-    #Visited : Menyimpan node yang sudah dikunjungi
-
-    #Tandai node saat ini udah dikunjungi
-    visited.add(node)
-    
-
-    #Tampilkan node yang sedang ddikunjungi
-    print(node, end=" ")
+    visited.add(node) # Tandai titik saat ini sebagai sudah dikunjungi
+    print(node, end=" ") # Tampilkan titik yang sedang diproses ke layar
+    # Cek semua tetangga dari titik saat ini
     for neighbor in graph[node]:
-        #Jika tetangga belum pernah dikunjungi
-        if neighbor not in visited:
-            dfs(graph, neighbor, visited)
+        if neighbor not in visited: # Jika tetangganya belum pernah dikunjungi
+            dfs(graph, neighbor, visited) # Panggil kembali fungsi DFS untuk mengecek tetangga tersebut (Rekursif)
 
-#Set visited
-visited=set()
+# Membuat tempat kosong untuk mencatat titik-titik yang sudah dikunjungi
+visited = set()
 
-#Menjalankan data 
-dfs(graph,"A",visited)
+# Menjalankan fungsi DFS dimulai dari titik 'A'
+dfs(graph, "A", visited)
